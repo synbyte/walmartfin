@@ -10,10 +10,15 @@ body {
   margin: 0;
   font-family: 'Courier Prime', monospace;
 }
-#receipt {
-  font-family:'Alexandria';
+.gridContainer {
+  display: grid;
+  border: 0.7px red solid; 
+  margin:0 0em;
+  
 }
+
 dialog {
+  display: none;
   box-shadow: 3px 3px 15px black;
   font-family: 'Courier Prime', monospace;
 }
@@ -24,95 +29,43 @@ dialog {
   width: 75%;
   margin-top: 10%;
 }
-#banner-message {
-  background: #fff;
-  border-radius: 4px;
-  padding: 20px;
-  font-size: 25px;
-  text-align: center;
-  transition: all 0.2s;
-  margin: 0 auto;
-  width: 300px;
 
-  button {
-    background: $blue-darker;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 14px;
-    font-size: 15px;
-    color: #fff;
-  }
-
-  &:hover {
-    background: $blue-darker;
-    color: #fff;
-    margin-top: 40px;
-    width: 200px;
-  }
-
-  &:hover button {
-    background: #fff;
-    color: #000;
-  }
-}
 .subtotal {
   display: flex;
 }
 header {
-  display: block;
+  display: flex;
   background: #00498d;
   width: 100vw;
   height: 50px;
   color: white;
   margin: 0;
-
-  align-content: flex;
-  justify-content: flex;
-  display: flex;
+  
+  align-self: space-around;
+  justify-content: start;
+  padding-bottom: 10px;
 }
 
 h3 {
-  font-family: 'Courier Prime', monospace;
-}
-h1 {
-  margin: 5px;
-  font-weight: 500;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 25px;
-  display: flex;
+  font-family: 'Alexandria', monospace;
 
-  margin-left: 2%;
 }
-#purchase {
-  display: none;
-}
-.bi {
-  margin-top: 5px;
-  font-size: 25px;
-}
-.bi-receipt {
-  margin: auto;
-  display: flex;
-  justify-content: flex-end;
-}
-.fa {
-  font-weight: 100;
-}
+
+
+
+
+
 li {
   font-family: 'Courier Prime', monospace;
 }
 #app {
   width: 100vw;
-  display: block;
+  display: table;
   text-align: center;
   margin: 10% auto;
   overflow: hidden;
 }
-.left {
-  height: 45px;
-  margin-top: auto;
-  font-size: 25px;
-}
+
 .material-icons {
   font-size: 45px;
 }

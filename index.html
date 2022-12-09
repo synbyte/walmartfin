@@ -1,5 +1,7 @@
 <html>
-  <head>  
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <link rel="stylesheet" href="styles.scss"></head>
   <body>
     <header>
@@ -7,8 +9,7 @@
 
       <i id="opener" class="bi bi-chevron-left left"></i>
       <span class="left"></span>
-      <h1 id="purchase">Purchase Details</h1>
-      <h3 id="receipt" style="font:alexandria;">< Receipt Details</h1>
+     <h3  style="font:alexandria;">< Receipt Details</h3>
     </header>
     <!--###########   Setup Dialog     ##########-->
     <dialog id="dialog">
@@ -26,10 +27,16 @@
         src="https://i.ibb.co/vLHzdzM/pngfind-com-walmart-logo-png-572731.png"
       />
       <br />
+      <!--STORE INFO-->
       <p id="phone">360-258-2654</p>
       <p>ST# 05461 OP# 001776 TE# 67 TR# 04809</p>
-
-      <p id="product">75" BIG ASS TV TOSHIBA 04233355265 899.99 T</p>
+      
+      <!--ITEM NAME AND UPC-->
+      <div class="gridContainer">
+      <div class="itemInfo">
+      <p class="" id="product">75" BIG ASS TV TOSHIBA 04233355265 899.99 T</p>
+      </div>
+      <!--ITEM PRICE-->
       <div class="subtotal" style="justify-content: flex-end; margin: 0 15px">
         <p id="subtotal">SUBTOTAL</p>
         <span style="margin: 0 30px">
@@ -55,7 +62,8 @@
           <p>909.59</p>
         </span>
       </div>
-      <div
+    </div>
+      <div id="account"
         style="
           display: block;
           justify-content: flex-start;

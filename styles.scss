@@ -12,7 +12,7 @@ body {
 }
 .gridContainer {
   display: grid;
-  border: 0.7px red solid; 
+  border:none; 
   margin:0 0em;
   
 }
@@ -85,7 +85,7 @@ li {
 }
 p {
   margin: 0px;
-  font-size: 0.6em;
+  font-size: 0.8em;
   line-height: 1.2;
   font-weight: 700;
 }
